@@ -12,7 +12,14 @@ html {
   height: 100%;
 }
 
-h1,
+h1 {
+  font-family: 'Segoe UI Black', '', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: camelcase;
+}
+
 h2,
 h3,
 h4,
@@ -68,6 +75,14 @@ a:focus, a:hover {
 
 #mainNav .navbar-brand {
   font-weight: 700;
+  padding: 10px;
+}
+
+#mainNav .navbar-image {
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border: 5px;
 }
 
 #mainNav a {
@@ -123,7 +138,7 @@ a:focus, a:hover {
   height: auto;
   padding: 200px 0;
   text-align: center;
-  color: white;
+  color: #f9f16e;
   background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -154,7 +169,8 @@ a:focus, a:hover {
     font-size: 100px;
   }
   .masthead .intro-body .intro-text {
-    font-size: 22px;
+    font-family: 'Segoe UI Black', '', Helvetica, Arial, sans-serif;
+    font-size: 36px;
   }
 }
 
@@ -167,14 +183,15 @@ a:focus, a:hover {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: #f9f16e;
+  border: 2px solid #f9f16e;
   border-radius: 100% !important;
   background: transparent;
 }
 
 .btn-circle:focus, .btn-circle:hover {
   color: white;
+  border: 2px solid white;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -182,6 +199,17 @@ a:focus, a:hover {
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.content-section p {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-size: 12px;
+}
+
+.content-section .content-section-image {
+  width:480px;
+  height:360px;
 }
 
 .download-section {
